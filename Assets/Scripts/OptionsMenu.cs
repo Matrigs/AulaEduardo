@@ -54,8 +54,19 @@ public class OptionsMenu : MonoBehaviour
 
         //Mudar resolução
         Screen.SetResolution(select.width,select.height,Screen.fullScreen);
-        
     }
     
+    //Mudar Graficos de acordo com a posição de graficos na lista
+    public void MudarGraficos(int grafico)
+    {
+        QualitySettings.SetQualityLevel(grafico);
+    }
+
+    //Aumentar para a tela completa
+    public void TelaCheia(bool telacheia)
+    {
+        Screen.fullScreen = telacheia;
+    }
     
+
 }
