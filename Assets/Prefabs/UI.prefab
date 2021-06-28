@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 425482311}
-  m_Layer: 0
+  - component: {fileID: 1382903515992619464}
+  m_Layer: 5
   m_Name: Pause
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24,14 +25,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 425482310}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 53.2, y: 53.2, z: 53.2}
+  m_LocalPosition: {x: -476, y: -119, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8694103394236005710}
   - {fileID: 3774286792108073326}
   m_Father: {fileID: 6408559420757601091}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1382903515992619464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425482310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3e084ec1d07b2e469e5b115e8903fa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &158418769651350910
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,7 +143,7 @@ GameObject:
   - component: {fileID: 1532611495910430924}
   - component: {fileID: 4326213911417118238}
   - component: {fileID: 2799090773360594837}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Stage Select
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -236,7 +249,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4326213911417118238}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1382903515992619464}
+        m_MethodName: StageSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &709831134617121956
 GameObject:
   m_ObjectHideFlags: 0
@@ -898,7 +922,7 @@ GameObject:
   - component: {fileID: 2063986918299886284}
   - component: {fileID: 1951984586409939123}
   - component: {fileID: 1339742861263236756}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Stage Select text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1169,7 +1193,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8694103394236005710
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1194,7 +1218,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 482, y: 266}
+  m_AnchoredPosition: {x: 482, y: 101}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3197687716435700585
@@ -1219,13 +1243,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3774286792108073326}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Menu Pause
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3774286792108073326
 Transform:
   m_ObjectHideFlags: 0
@@ -1980,7 +2004,7 @@ GameObject:
   - component: {fileID: 303302111465192450}
   - component: {fileID: 5490817790638666914}
   - component: {fileID: 5307795510320383230}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Resume text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2274,7 +2298,7 @@ GameObject:
   - component: {fileID: 6444165773458116473}
   - component: {fileID: 677732241292764746}
   - component: {fileID: 6657909381128598012}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Resume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2652,7 +2676,7 @@ GameObject:
   - component: {fileID: 3996952500234566142}
   - component: {fileID: 8437068314057021218}
   - component: {fileID: 7684596030948288259}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Main Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2758,7 +2782,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8437068314057021218}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1382903515992619464}
+        m_MethodName: MainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4983696416568735597
 GameObject:
   m_ObjectHideFlags: 0
@@ -3126,7 +3161,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2414668531442651119}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -3355,7 +3390,7 @@ GameObject:
   - component: {fileID: 903897999593674574}
   - component: {fileID: 6269981404382261648}
   - component: {fileID: 4759295127853714267}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Options text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3710,7 +3745,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!1 &6408559420795990311
 GameObject:
   m_ObjectHideFlags: 0
@@ -3856,7 +3891,7 @@ GameObject:
   - component: {fileID: 7267776410903351401}
   - component: {fileID: 6722713512195086105}
   - component: {fileID: 2549146057423119880}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Options
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3962,7 +3997,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6722713512195086105}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2357978042273053977}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2414668531442651119}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6677574618659105571
 GameObject:
   m_ObjectHideFlags: 0
@@ -4202,7 +4259,7 @@ GameObject:
   - component: {fileID: 1667652697335932946}
   - component: {fileID: 7970979804540081609}
   - component: {fileID: 4859617435239996043}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Main Menu text
   m_TagString: Untagged
   m_Icon: {fileID: 0}

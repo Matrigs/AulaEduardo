@@ -7,8 +7,8 @@ public class PauseMenu : MonoBehaviour
 {
     public void StageSelect()
     {
-        //SceneManager.LoadScene("StageSelect");
-        Debug.Log("Seleção de Fases");
+        SceneManager.LoadScene("StageSelect");
+        //Debug.Log("Seleção de Fases");
     }
 
     public void MainMenu()
