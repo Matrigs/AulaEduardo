@@ -17,6 +17,9 @@ public class PlayerController : MonoBehaviour
     public TextMeshProUGUI energyText;
     public int points;
     public int energy;
+    public GameManager gamemanager;
+    public bool pause = false;
+    
 
     void Start()
     {
@@ -24,6 +27,7 @@ public class PlayerController : MonoBehaviour
 
         energyText.text = "Energy: " + energy;
 
+        gamemanager = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
 
     void Update()
@@ -54,8 +58,18 @@ public class PlayerController : MonoBehaviour
             animator.SetBool ("Jumping", false); 
         }
 
+        if (Input.GetKeyDown(KeyCode.Escape) && pause == false)
+        {
+            pause = true;
+            gamemanager.Pause();
+        } else if (Input.GetKeyDown(KeyCode.Escape) && pause == true)
+        {
+            pause = false;
+            gamemanager.Despause();
+        }
 
-    
+
+
     }
 
     void FixedUpdate()
