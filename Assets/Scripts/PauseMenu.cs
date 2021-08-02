@@ -9,11 +9,14 @@ public class PauseMenu : MonoBehaviour
     {
         SceneManager.LoadScene("StageSelect");
         //Debug.Log("Seleção de Fases");
+
+        Time.timeScale = 1;
     }
 
     public void MainMenu()
     {
         SceneManager.LoadScene(0);
+        Time.timeScale = 1;
 
     }
 
