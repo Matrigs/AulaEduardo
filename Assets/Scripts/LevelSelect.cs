@@ -9,6 +9,7 @@ public class LevelSelect : MonoBehaviour
     public List<GameObject> fases;
 
     private GameObject selected;
+    //teste
 
     void Start()
     {
